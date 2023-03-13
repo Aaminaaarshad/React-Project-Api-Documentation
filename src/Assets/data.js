@@ -3,7 +3,7 @@ const users = [
       id: 1,
       title: 'Verify User',
       detail:[
-        {type:'POST'},
+        {Type:'POST'},
         {url :'http://localhost:5000/api/users/verifyUser'},
       ],
       parameters: [
@@ -17,13 +17,13 @@ const users = [
       id: 2,
       title: 'Register User',
       detail:[
-        {type:'POST'},
+        {Type:'POST'},
         {url :'http://localhost:5000/api/users/register'},
       ],
       parameters:[
-        {field:'Token'},
-        {type:'string'},
-        {description:'Token of the user'}
+        {Field:'Token'},
+        {Type:'string'},
+        {Description:'Token of the user'}
       ],
       response: "message:Registration Successful",
       },
@@ -31,7 +31,7 @@ const users = [
       id: 3,
       title: 'Login User',
       detail:[
-        {type:'POST'},
+        {Type:'POST'},
         {url :'http://localhost:5000/api/users/login'},
       ],
       parameters: [
@@ -44,7 +44,7 @@ const users = [
       id: 4,
       title: 'Forgot Password',
       detail:[
-        {type:'PUT'},
+        {Type:'PUT'},
         {url :'http://localhost:5000/api/users/forgot-password'},
       ],
       parameters: [
@@ -56,7 +56,7 @@ const users = [
       id: 5,
       title: 'Reset Password',
       detail:[
-        {type:'PUT'},
+        {Type:'PUT'},
         {url :'http://localhost:5000/api/users//reset-password'},
       ],
       parameters: [
