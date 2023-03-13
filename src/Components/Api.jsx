@@ -9,7 +9,7 @@ function Api() {
 
 const {detail,parameters,response,title}=jobs[value]
 console.log(parameters)
-
+////heloo
   return (
     <section className='section'>
     <div className="title">
