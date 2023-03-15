@@ -13,10 +13,8 @@ const Home = () => {
         <h1>Fori Analytics</h1>
       </div>
       <h4 className='tag'>Api Documentation</h4>
-      {/* <Api/> */}
       <UserTest/>
-      {/* <h5>Dashboard Api</h5>
-      <DashboardTest/> */}
+      {/* <DashboardTest/> */}
     </div>
   )
 }

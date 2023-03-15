@@ -5,27 +5,24 @@ import '../../Components/TestComp/Test.css'
 
 
 const UserTest = () => {
-    const [showInfo,setShowInfo]=useState(false)
     const [ApiUser,setApiUser]=useState(users)
     const [ClickedApiUser,setClickedApiUser]=useState(users[0])
-    console.log(ClickedApiUser)
     const [CaseApiUser,setCaseApiUser]=useState(ClickedApiUser.cases[0])
-    console.log(CaseApiUser)
 
+   
 
 
     const clickHandler=(index)=>{
         setClickedApiUser(users[index])
     }
-    const caseHandler=(index)=>{
-        setShowInfo(!showInfo)
+    const caseHandler=(index)=>{ 
         setCaseApiUser(ClickedApiUser.cases[index])
     }
 
 
 return (
     <section className='user'>
-        <div>
+        <div className='listApi'>
             <h4>Users Api</h4>
             {ApiUser.map((item,index)=>{
             return(
@@ -61,15 +58,15 @@ return (
                 {CaseApiUser.parameters.map((item,index)=>{
                     return(
                         <div >
-                            <h5>{showInfo && item.Field}</h5>
-                            <h5>{showInfo && item.Type}</h5>
-                            <h5>{showInfo && item.Description}</h5>
+                            <h5>{ item.Field}</h5>
+                            <h5>{ item.Type}</h5>
+                            <h5>{ item.Description}</h5>
                         </div>
                     )
                 })}
             </div>
             <div>
-                <p>{showInfo && CaseApiUser.response}</p>
+                <p>{CaseApiUser.response}</p>
             </div>
         </div>
 

@@ -22,9 +22,10 @@ const DashboardTest = () => {
 
 
   return (
-    <section className='dashboard'>
+    <section className='user'>
 
-        <div>
+        <div className='listApi'>
+            <h4>Dashboard Api</h4>
             {DashboardUser.map((item,index)=>{
             return(
             <>
@@ -36,13 +37,14 @@ const DashboardTest = () => {
         </div>
 
         <div className='showData'>
-
-            <div>
-                <h3>{ClickedDashboardUser.Type}</h3>
-                <h3>{ ClickedDashboardUser.url}</h3>
+            <div className='type'>
+            <div className='typeUrl'>
+                <h5>{ClickedDashboardUser.Type}</h5>
+                <h5>{ ClickedDashboardUser.url}</h5>
             </div>
 
-            <div>
+            <div className='cases-btn'>
+            <h4>All Cases</h4>
 
                 {ClickedDashboardUser.cases.map((item,index)=>{
                 return(
@@ -51,8 +53,9 @@ const DashboardTest = () => {
                     </div>
                 )
                 })}
-
-                <div>
+                </div>
+<div className='info'>
+                <div className='parameters'>
                 {CaseDashboardUser.parameters.map((item,index)=>{
                     return(
                         <div>
@@ -66,6 +69,7 @@ const DashboardTest = () => {
 
                 <div>
                 <p>{showInfo && CaseDashboardUser.response}</p>
+                </div>
                 </div>
 
             </div>
