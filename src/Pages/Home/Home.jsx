@@ -1,20 +1,27 @@
-import Api from '../../Components/APi/Api'
 import React from 'react'
-import UserTest from '../../Components/TestComp/UserTest'
-import DashboardTest from '../../Components/TestComp/DashboardTest'
-import '../../Components/TestComp/Test.css'
-
+import DashboardApi from '../../Components/DashbaordApi/DashboardApi'
+import UserApi from '../../Components/UserApi/UserApi'
+import './Home.css'
 
 
 const Home = () => {
   return (
     <div className='Home'>
-      <div className='menubar'>
         <h1>Fori Analytics</h1>
-      </div>
       <h4 className='tag'>Api Documentation</h4>
-      <UserTest/>
-      {/* <DashboardTest/> */}
+
+      <div className="Containerdiv">
+        <h3>User Apis</h3>
+      <UserApi/>
+      </div>
+
+      <div className="Containerdiv">
+      <h3>Dashboard Apis</h3>
+
+      {/* <DashboardApi/> */}
+
+      </div>
+
     </div>
   )
 }

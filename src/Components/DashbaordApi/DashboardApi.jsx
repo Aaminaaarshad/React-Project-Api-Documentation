@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
 import {dashboard} from '../../Assets/dashboardData'
-import '../../Components/TestComp/Test.css'
+import '../../Components/DashbaordApi/DashboardApi.css'
 
-const DashboardTest = () => {
+const DashboardApi = () => {
     const[showInfo,setShowInfo]=useState(false)
     const [DashboardUser,setDashboardUser]=useState(dashboard)
     const [ClickedDashboardUser,setClickedDashboardUser]=useState(dashboard[0])
@@ -54,7 +54,8 @@ const DashboardTest = () => {
                 )
                 })}
                 </div>
-<div className='info'>
+
+                <div className='info'>
                 <div className='parameters'>
                 {CaseDashboardUser.parameters.map((item,index)=>{
                     return(
@@ -72,10 +73,12 @@ const DashboardTest = () => {
                 </div>
                 </div>
 
+    
+
             </div>
         </div>
     </section>
   )
 }
 
-export default DashboardTest
+export default DashboardApi
