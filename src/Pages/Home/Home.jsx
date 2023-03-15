@@ -1,12 +1,22 @@
 import Api from '../../Components/APi/Api'
 import React from 'react'
-import Test from '../../Components/TestComp/Test'
+import UserTest from '../../Components/TestComp/UserTest'
+import DashboardTest from '../../Components/TestComp/DashboardTest'
+import '../../Components/TestComp/Test.css'
+
+
 
 const Home = () => {
   return (
-    <div>
+    <div className='Home'>
+      <div className='menubar'>
+        <h1>Fori Analytics</h1>
+      </div>
+      <h4 className='tag'>Api Documentation</h4>
       {/* <Api/> */}
-      <Test/>
+      <UserTest/>
+      {/* <h5>Dashboard Api</h5>
+      <DashboardTest/> */}
     </div>
   )
 }
