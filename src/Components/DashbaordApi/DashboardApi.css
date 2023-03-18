@@ -1,0 +1,103 @@
+.Dashboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    padding: 5rem 10rem;
+    background-color: var(--background_color);
+    width: 100%;
+    height: 70%;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 62%;
+    height: 60vh;
+    padding: 1rem 1rem 2rem 1rem;
+}
+.left >h4{
+    width: 60%;
+}
+.apiName{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0;
+    padding: 0rem 1rem 2rem 0rem;
+    width: 100%;
+    gap: 0rem;
+    height: 100%;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100vw;
+    height: 50vh;
+    padding: 1rem 1rem 0rem 1rem;
+}
+.typeANDurl{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 12%;
+    gap: 1rem;
+}
+.typee{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+    height: 30%;
+    gap: 1rem;
+}
+.table{
+    width: 100%;
+}
+th{
+    text-align: left;
+}
+td{
+    width: 33%;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 0rem;
+    width: 20%;
+    height: 50vh;
+    padding: 1rem 0rem 2rem 1rem;
+}
+.case{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.ptag{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem 1rem 0rem;
+}
+.example{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    width: 100%;
+    height: 100%;
+}
+.button{
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    outline-color: hsl(186, 100%, 94%);
+  }
+  .button:hover {
+    color: #2caeba;
+    box-shadow: 0 2px #2caeba;
+  }

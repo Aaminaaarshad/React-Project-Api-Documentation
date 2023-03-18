@@ -1,9 +1,13 @@
-
 :root{
   --primary_color:#3E54AC;
   --secondary_color:#655DBB;
   --background_color:#ECF2FF;
   --btn_color:#BFACE2
+}
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
 }
 *,
 ::after,
@@ -85,28 +89,6 @@ p {
     width: 95vw;
   }
 }
-
-.loading {
-  text-align: center;
-}
-
-.underline {
-  width: 5rem;
-  height: 0.25rem;
-  margin-bottom: 1.25rem;
-  background: var(--clr-primary-5);
-  margin-left: auto;
-  margin-right: auto;
-}
-.title {
-  margin-bottom: 4rem;
-  text-align: center;
-}
-a{
-  text-decoration: none;
-  font-family: 'Signika', sans-serif;
-}
-
 .btn{
   padding: 0.75rem 1.25rem;
   background-color: var(--secondary_color);
@@ -122,8 +104,3 @@ a{
 
 
 
-/*
-=============== 
-Jobs
-===============
-*/

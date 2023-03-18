@@ -7,6 +7,7 @@ import {RxCross2} from "react-icons/rx"
 
 
 const UserApi = () => {
+    const [value,setValue]=useState(0);
     const [ApiUser,setApiUser]=useState(users)
     const [ClickedApiUser,setClickedApiUser]=useState(users[0])
     const [CaseApiUser,setCaseApiUser]=useState(ClickedApiUser.cases[0])
@@ -15,6 +16,7 @@ const UserApi = () => {
 
 
     const clickHandler=(index)=>{
+        setValue(index)
         setClickedApiUser(users[index])
         setCaseApiUser(ClickedApiUser.cases[0])
 
@@ -33,13 +35,13 @@ return (
             {ApiUser.map((item,index)=>{
             return(
                 <div key={index}>
-                    <button className='btn' key={item.id} onClick={()=>clickHandler(index)}>{item.title}</button>
+                    <button key={item.id} onClick={()=>clickHandler(index)} className={`button ${index === value}`}>{item.title}</button>
                 </div>   
             )})}
         </div>
         
         <div className='info'>
-            <div className='typeUrl'>
+            <div>
                 <div className='api_param'>
                     <h4>Request Type</h4>
                 <h5 style={{color:ClickedApiUser.Type==='POST'?"red":ClickedApiUser.Type==='PUT'?"orange":ClickedApiUser.Type==='GET'?"green":ClickedApiUser.Type==='PATCH'?"orangde":"black"}}>{ ClickedApiUser.Type}</h5>
@@ -48,11 +50,11 @@ return (
                 <div className='api_param'>
                 <h4>Request url</h4>
 
-                <h5>{ ClickedApiUser.url}</h5>
+                <h5 style={{color:'#232933'}}>{ ClickedApiUser.url}</h5>
 
                 </div>
             </div>
-            <table className='parameters'>
+            <table >
                 <th>Field Name</th>
                 <th>Field type</th>
                 <th>Field Description</th>
@@ -67,7 +69,7 @@ return (
                 })}
             </table>
             <div>
-                <p>{CaseApiUser.response}</p>
+                <p style={{color:'#606973'}}>{CaseApiUser.response}</p>
             </div>
         </div>
 
@@ -79,10 +81,19 @@ return (
             return(
                 <div className='case' key={index}>
                     {item.title==="Success"?<TiTick/>:<RxCross2/>}
-                    <button className='btn' key={item.id} onClick={()=>caseHandler(index)}>{item.title}</button>
+                    <button key={item.id} onClick={()=>caseHandler(index)} className={`button ${index === value}`}>{item.title}</button>
                 </div>
             )
         })}
+         <div className='ptag'>
+                    <h4>Example</h4>
+                    <h5>{"{"}</h5>
+                    <div className='example'><h5>{"firstName:String,"}</h5>
+                        <h5>{"email:String,"}</h5>
+                        <h5>{"password:String,"}</h5>
+                    </div>
+                    <h5>{"}"}</h5>
+                </div>
         </div>
 
 

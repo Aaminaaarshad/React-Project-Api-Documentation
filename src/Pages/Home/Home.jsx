@@ -7,19 +7,18 @@ import './Home.css'
 const Home = () => {
   return (
     <div className='Home'>
-        <h1>Fori Analytics</h1>
-      <h4 className='tag'>Api Documentation</h4>
+
+      <h1>Fori Analytics</h1>
+      <h4>Api Documentation</h4>
 
       <div className="Containerdiv">
-        <h3>User Apis</h3>
-      <UserApi/>
+        <h3>User Api's</h3>
+        <UserApi/>
       </div>
 
       <div className="Containerdiv">
-      <h3>Dashboard Apis</h3>
-
-      {/* <DashboardApi/> */}
-
+        <h3>Dashboard Api's</h3>
+        <DashboardApi/>
       </div>
 
     </div>

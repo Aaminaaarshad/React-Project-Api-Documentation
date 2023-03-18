@@ -11,7 +11,7 @@ export const dashboard=[
                 parameters:[
                     {Field:'Token', Type:'String', Description:'Token of the user'},                
                 ],
-                response:'message: '
+                response:'Message: Data Found'
             },
             {
                 id:2,
@@ -19,7 +19,7 @@ export const dashboard=[
                 parameters:[
                     {Field:'Token', Type:'String', Description:'Token of the user'},                
                 ],
-                response:'message: '
+                response:'Message: Form Is Not Connected'
             }
         ]
 
@@ -40,7 +40,7 @@ export const dashboard=[
                     {Field:'DashboardName', Type:'String', Description:'Name of the Dashboard'},                
                     {Field:'DashboardColor', Type:'String', Description:'Color of the Dashboard'},                
                 ],
-                response:'message: '
+                response:'Message: User Form Data Is Created',
             },
             {
                 id:2,
@@ -52,7 +52,7 @@ export const dashboard=[
                     {Field:'DashboardName', Type:'String', Description:'Name of the Dashboard'},                
                     {Field:'DashboardColor', Type:'String', Description:'Color of the Dashboard'},                 
                 ],
-                response:'message: '
+                response:'Message: Form Data Is Already Provided'
             },
             {
                 id:3,
@@ -63,7 +63,7 @@ export const dashboard=[
                     {Field:'DashboardName', Type:'String', Description:'Name of the Dashboard'},                
                     {Field:'DashboardColor', Type:'String', Description:'Color of the Dashboard'},                 
                 ],
-                response:'message: '
+                response:'Message: Key Is Missing'
             }
         ]
 
@@ -83,7 +83,7 @@ export const dashboard=[
                     {Field:'secretKey', Type:'String', Description:'Secret key'},                
                     {Field:'DashboardName', Type:'String', Description:'Name of the Dashboard'},                
                     {Field:'DashboardColor', Type:'String', Description:'Color of the Dashboard'},                 ],
-                response:'message: '
+                response:'Message: Form Data Is Updated'
             },
         ]
 
@@ -98,17 +98,17 @@ export const dashboard=[
                 id:1,
                 title:'Success',
                 parameters:[
-                    {Field:'email', Type:'String', Description:'email of the user'},
+                    {Field:'email', Type:'String', Description:'Email of the user'},
                 ],
-                response:'message: '
+                response:'Message: Subcription Successful'
             },
             {
                 id:2,
                 title:'If The User Is Already Subscribed',
                 parameters:[
-                    {Field:'email', Type:'String', Description:'email of the user'},
+                    {Field:'email', Type:'String', Description:'Email of the user'},
                 ],
-                response:'message: '
+                response:'Message: The User Is Already Subscribed'
             },
         ]
 
